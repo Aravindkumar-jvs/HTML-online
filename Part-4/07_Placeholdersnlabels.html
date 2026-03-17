@@ -1,0 +1,66 @@
+<!--placeholder attribute 
+    <input type="text" placeholder="enter name"> 
+    
+    Label element
+    **represents a caption for an item in a user interface-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+        <label> <!--used to connect text and box with help fo cursor just by clicking -->
+            Username
+            <input type="text" placeholder="enter username">
+        </label>
+        <br>
+        <label>
+            Password
+            <input type="password" placeholder="enter password">
+        </label>
+        
+    </form>
+</body>
+</html>
+<hr>
+
+<!--Label classical Approach
+
+    <label for="username">Enter your username :</label>
+    <input type="text" id="username" placeholder="username"
+    
+    id: is a unique name element or attribute .
+    
+    **for attribute n Id attribute should be same value**
+    FOR label is been used for this input attribute Id. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="enter username" id="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="enter password" id="password">
+        </div>
+        <div>
+            <label for="age">Enter Age:</label>
+            <input type="number" placeholder="Age" id="age">
+        </div>
+    </form>
+</body>
+</html>
+<!--using for and id tag now the connection is formed. -->
