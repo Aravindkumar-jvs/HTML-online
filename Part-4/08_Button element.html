@@ -1,0 +1,72 @@
+<!--used to submit the form or information of form..
+    types of attribute button are:
+    1.<button type="submit">submit</button>
+    2.<button type="button">do something</button>
+    3.<button type="reset">do something</button>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>hello</button> <!--no action becoz no data , it is not under forms tag so..-->
+    <form action="/server"> <!--tells where the form information goes into url or server -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="enter username" id="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="enter password" id="password">
+        </div>
+        <div>
+            <label for="age">Enter Age:</label>
+            <input type="number" placeholder="Age" id="age">
+        </div>
+        <div>
+            <button>submit</button> <!--button-->
+            <button type="submit">type1</button><!--submits information-->
+            <button type="button">hello</button><!--just button-->
+            <button type="reset">Reset</button><!--reset button-->
+        </div>
+    </form>
+</body>
+</html>
+
+<hr>
+<!-- always we use button tag to create button ,
+    using input element we does not create button
+    becoz its not a good practice or not advisable-->
+
+<!--Button using input
+
+    <input type="submit">
+    <input type="submit" value="click me">-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/database">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Student name" id="name">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="login password" id="password">
+        </div>
+        <div>
+            <input type="button" value="Click me">
+            <input type="submit"> <!--to submit-->
+        </div>
+    </form>
+</body>
+</html>

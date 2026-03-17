@@ -1,0 +1,51 @@
+<!--Name attribute
+    name of the form control.
+    Submitted with the form as part of a name/value pair.
+    
+<input type="text" placeholder="enter name" id="username"
+ name="username"/>  -->
+
+ <!-- name attribute is a name of a value to which we want 
+    to refer when the form is submitted...-->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" 
+            placeholder="enter username" 
+            id="username"
+            name="user">  <!--/server?username=abcd-->
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" 
+            placeholder="enter password" 
+            id="password"
+            name="pass">  <!--/server?user=aravind&pass=pawan+kalyan-->
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <!--new form-->
+    <form action="https://www.youtube.com/results">
+        <!--this is a method of linking a webpage with some big website 
+        *****************using URLs******************-->
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+
+    </form>
+</body>
+</html>
+
+<!--/server?username=abcd-->
+<!--name=value-->
